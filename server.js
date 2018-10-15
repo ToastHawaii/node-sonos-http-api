@@ -53,6 +53,8 @@ var requestHandler = function (req, res) {
   }).resume();
 };
 
+(function() {
+  
 let server;
 
 if (settings.https) {
@@ -96,5 +98,6 @@ server.on('error', (err) => {
 
   process.exit(1);
 });
-
+  
+})();
 
